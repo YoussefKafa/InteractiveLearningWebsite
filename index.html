@@ -8,7 +8,7 @@
 <!--______________________________________Events_______________________________________________-->
 
 <h1 align="center">JQuery Interactive Learning Website</h1>
-<h2>Events And Effects</h2>
+<h2>Basic Events And Effects:</h2>
 <!--______________________________________Click Event_______________________________________________-->
 <h3>Click Event ( hide/show/toggle effects )</h3>
 <script>
@@ -31,18 +31,18 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
 $("#doubleClickButton").dblclick(function(){
-$("#colorParagraph").css("color","red");
+$("#colorParagraph").css("color","yellow");
 });
 });
 </script>
-<p id="colorParagraph">changing this paragraph color</p>
+<p id="colorParagraph">double click this paragraph color</p>
 <button id="doubleClickButton">change color</button>
 <!--______________________________________Mouseenter and MouseLeave Events_______________________________________________-->
 <h3>Mouseenter and MouseLeave Events</h3>
 <script>
     $(document).ready(function(){
-$("#mouseEnterLeave").mouseenter(function(){$(this).css("color","red")});
-$("#mouseEnterLeave").mouseleave(function(){$(this).css("color","blue")});
+$("#mouseEnterLeave").mouseenter(function(){$(this).css("color","yellow")});
+$("#mouseEnterLeave").mouseleave(function(){$(this).css("color","brown")});
 });
 </script>
 <p id="mouseEnterLeave">mouse enter and mouse leave</p>
@@ -51,7 +51,7 @@ $("#mouseEnterLeave").mouseleave(function(){$(this).css("color","blue")});
 <h3>Hover Event</h3>
 <script>
     $(document).ready(function(){
-$("#pWithHover").hover(function(){$(this).css("color","red")},function(){$(this).css("color","blue")});
+$("#pWithHover").hover(function(){$(this).css("color","yellow")},function(){$(this).css("color","brown")});
 });
 </script>
 <p id="pWithHover">doing it with hover event</p>
@@ -66,7 +66,7 @@ $("#pWithHover").hover(function(){$(this).css("color","red")},function(){$(this)
       });
     });
     </script>
-    <p id="pCallBack"> you can hide and show or toggle this paragraph with the next buttons:</p>
+    <p id="pCallBack">You can notice the speed of hiding this paragraph and calling back the function of showing the hidden span</p>
     <span id="hiddenSpan">hidden span <br></span> 
     <button id="callBackButton">hide and callback</button>
 </body>

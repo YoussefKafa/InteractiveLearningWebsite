@@ -2,10 +2,12 @@ h1 {
   color: red;
 }
 h2 {
-  color: turquoise;
+  color: rgb(19, 51, 233);
 }
 h3 {
-  color: rgb(250, 184, 239);
+  color: rgb(125, 158, 248);
+  text-decoration: underline;
+  text-align: center;
 }
 #hiddenSpan {
   display: none;
