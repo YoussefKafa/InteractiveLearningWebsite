@@ -1,14 +1,25 @@
 h1 {
-  color: red;
+    color: red;
 }
+
 h2 {
-  color: rgb(19, 51, 233);
+    color: rgb(19, 51, 233);
 }
+
 h3 {
-  color: rgb(125, 158, 248);
-  text-decoration: underline;
-  text-align: center;
+    color: rgb(125, 158, 248);
+    text-decoration: underline;
+    text-align: center;
 }
+
 #hiddenSpan {
-  display: none;
+    display: none;
+}
+
+#appendDiv {
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
 }

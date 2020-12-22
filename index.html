@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="jquery-3.5.1.min.js"></script>
-<link rel="stylesheet" href="style.css">
-<script src="JQueryScripts.js"></script>
-</head>
-<body background="bg.jpg">
-<!--______________________________________Events_______________________________________________-->
 
-<h1 align="center">JQuery Interactive Learning Website</h1>
-<div id="eventsDiv">
-<h2>Basic Events And Effects:</h2>
-<!--______________________________________Click Event_______________________________________________-->
-<h3>Click Event ( hide/show/toggle effects )</h3>
-<p id="pToHideAndShow"> you can hide and show or toggle this paragraph with the next buttons:</p>
-<button id="hideButton">hide</button> <button id="showButton">show</button><button id="toggleButton">toggle</button>
-<!--__________________________________Double Click Event___________________________________________________-->
-<h3>Double Click Event</h3>
-<p id="colorParagraph">double click this paragraph color</p>
-<button id="doubleClickButton">change color</button>
-<!--______________________________________Mouseenter and MouseLeave Events_______________________________________________-->
-<h3>Mouseenter and MouseLeave Events</h3>
-<p id="mouseEnterLeave">mouse enter and mouse leave</p>
-<!--____________________________________Hover Event_________________________________________________-->
-<h3>Hover Event</h3>
-<p id="pWithHover">doing it with hover event</p>
-<!--____________________________________Callback and speed of an event_________________________________________________-->
-<h3>Callback after an event</h3>
-    <p id="pCallBack">You can notice the speed of hiding this paragraph and calling back the function of showing the hidden span</p>
-    <span id="hiddenSpan">hidden span <br><br></span> 
-    <button id="callBackButton">hide and callback</button>
+<head>
+    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="JQueryScripts.js"></script>
+</head>
+
+<body background="bg.jpg">
+    <!--______________________________________Events_______________________________________________-->
+
+    <h1 align="center">JQuery Interactive Learning Website</h1>
+    <h1>Contents</h1>
+    <a href="#beae">1. Basic Events And Effects (click/hide/show/toggle/dblclick/mouseenter/mouseleave/hover/speed/callback)</a><br>
+    <a href="#wwheaa">2. Working With HTML elements and attributes</a><br>
+    <div id="eventsDiv">
+        <h2 id="beae">Basic Events And Effects:</h2>
+        <!--______________________________________Click Event_______________________________________________-->
+        <h3>Click Event ( hide/show/toggle effects )</h3>
+        <p id="pToHideAndShow"> you can hide and show or toggle this paragraph with the next buttons:</p>
+        <button id="hideButton">hide</button> <button id="showButton">show</button><button id="toggleButton">toggle</button>
+        <!--__________________________________Double Click Event___________________________________________________-->
+        <h3>Double Click Event</h3>
+        <p id="colorParagraph">double click this paragraph color</p>
+        <button id="doubleClickButton">change color</button>
+        <!--______________________________________Mouseenter and MouseLeave Events_______________________________________________-->
+        <h3>Mouseenter and MouseLeave Events</h3>
+        <p id="mouseEnterLeave">mouse enter and mouse leave</p>
+        <!--____________________________________Hover Event_________________________________________________-->
+        <h3>Hover Event</h3>
+        <p id="pWithHover">doing it with hover event</p>
+        <!--____________________________________Callback and speed of an event_________________________________________________-->
+        <h3>Callback after an event</h3>
+        <p id="pCallBack">You can notice the speed of hiding this paragraph and calling back the function of showing the hidden span</p>
+        <span id="hiddenSpan">hidden span <br><br></span>
+        <button id="callBackButton">hide and callback</button>
+        <br>
+    </div>
     <br>
-</div>
-<div>
-    another div
-</div>
+    <hr>
+    <h1 align="center" id="wwheaa"> Working With HTML elements and attributes </h1>
+    <div>
+        <h2><span style="color: red;">Get</span> and <span style="color: red;">Set</span> Html Elements</h2>
+        <input type="text" value="text to alert" id="textToAlert" />
+        <button id="changeVal">change the value attribute</button>
+        <button id="alertButton">write the text</button>
+        <p id="pToWrite"></p>
+        <h2>Prepend , Append, Before , After</h2>
+        <button id="append">Append</button><button id="prepend">Prepend</button><button id="before">Before</button><button id="after">After</button>
+        <div id="appendDiv">
+            this is a div element
+        </div>
+        <h2>Remove, Empty</h2>
+        <button id="removeBtn">remove</button><button id="emptyBtn">empty</button>
+        <p id="removeP">This is a paragraph to remove</p>
+        <p id="emptyP">This is a paragraph to empty</p>
+    </div>
 </body>
+
 </html>
