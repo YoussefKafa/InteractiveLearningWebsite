@@ -8,7 +8,7 @@
 <!--______________________________________Events_______________________________________________-->
 
 <h1 align="center">JQuery Interactive Learning Website</h1>
-<h2>Events</h2>
+<h2>Events And Effects</h2>
 <!--______________________________________Click Event_______________________________________________-->
 <h3>Click Event ( hide/show/toggle effects )</h3>
 <script>
@@ -55,7 +55,19 @@ $("#pWithHover").hover(function(){$(this).css("color","red")},function(){$(this)
 });
 </script>
 <p id="pWithHover">doing it with hover event</p>
-<!--_____________________________________________________________________________________-->
-<h2>Effects</h2>
+<!--____________________________________Callback and speed of an event_________________________________________________-->
+<h3>Callback after an event</h3>
+<script>
+    $(document).ready(function(){
+      $("#callBackButton").click(function(){
+        $("#pCallBack").hide(4000,function(){
+            $("#hiddenSpan").show();
+        });
+      });
+    });
+    </script>
+    <p id="pCallBack"> you can hide and show or toggle this paragraph with the next buttons:</p>
+    <span id="hiddenSpan">hidden span <br></span> 
+    <button id="callBackButton">hide and callback</button>
 </body>
 </html>

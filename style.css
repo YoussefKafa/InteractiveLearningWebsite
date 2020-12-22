@@ -7,3 +7,6 @@ h2 {
 h3 {
   color: rgb(250, 184, 239);
 }
+#hiddenSpan {
+  display: none;
+}
