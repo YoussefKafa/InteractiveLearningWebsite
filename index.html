@@ -10,7 +10,7 @@
 <h1 align="center">JQuery Interactive Learning Website</h1>
 <h2>Events</h2>
 <!--______________________________________Click Event_______________________________________________-->
-<h3>Click Event</h3>
+<h3>Click Event ( hide/show/toggle effects )</h3>
 <script>
 $(document).ready(function(){
   $("#hideButton").click(function(){
@@ -19,10 +19,13 @@ $(document).ready(function(){
   $("#showButton").click(function(){
     $("#pToHideAndShow").show();
   });
+  $("#toggleButton").click(function(){
+    $("#pToHideAndShow").toggle();
+  });
 });
 </script>
-<p id="pToHideAndShow"> you can hide and show this paragraph with the next buttons:</p>
-<button id="hideButton">hide</button> <button id="showButton">show</button>
+<p id="pToHideAndShow"> you can hide and show or toggle this paragraph with the next buttons:</p>
+<button id="hideButton">hide</button> <button id="showButton">show</button><button id="toggleButton">toggle</button>
 <!--__________________________________Double Click Event___________________________________________________-->
 <h3>Double Click Event</h3>
 <script>
@@ -53,6 +56,6 @@ $("#pWithHover").hover(function(){$(this).css("color","red")},function(){$(this)
 </script>
 <p id="pWithHover">doing it with hover event</p>
 <!--_____________________________________________________________________________________-->
-
+<h2>Effects</h2>
 </body>
 </html>
