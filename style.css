@@ -23,3 +23,8 @@ h3 {
 a {
     text-decoration: none;
 }
+
+.blkClass {
+    border: 1px solid black;
+    color: black;
+}
