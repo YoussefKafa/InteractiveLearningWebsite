@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
+<title>InteractiveLearningSite</title>
 
 <head>
     <script src="jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
     <script src="JQueryScripts.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
 </head>
 
-<body background="bg.jpg">
+<body background="img/bg.jpg">
     <!--______________________________________Events_______________________________________________-->
     <h1 align="center">JQuery Interactive Learning Website</h1>
     <h1>Contents</h1>
     <a href="#beae">1. Basic Events And Effects (click/hide/show/toggle/dblclick/mouseenter/mouseleave/hover/speed/callback)</a><br>
     <a href="#wwheaa">2. Dealing With HTML</a><br>
-    <a href="#wwheaa">3. Dealing With Css</a><br>
+    <a href="#dwc">3. Dealing With Css</a><br>
+    <a href="#draggable">4. JQuery-UI Interactions</a><br>
+    <a href="#apps">5. Applications developed using JQuery-UI</a><br>
+    <a href="#matchingGame">&nbsp 5.1 Simple Matching game</a><br>
     <div id="eventsDiv">
         <h2 id="beae">Basic Events And Effects:</h2>
         <!--______________________________________Click Event_______________________________________________-->
@@ -58,7 +64,7 @@
         <p id="removeP">This is a paragraph to remove</p>
         <p id="emptyP">This is a paragraph to empty</p>
     </div>
-    <h1 align="center" id="wwheaa"> Dealing With CSS </h1>
+    <h1 align="center" id="dwc"> Dealing With CSS </h1>
     <div>
         <h2>addClass , removeClass</h2>
         <p>the next button can turn all h2 elements to black.</p>
@@ -67,6 +73,20 @@
         <p id="clrPara">You can change the color of this paragraph to the color that you want!</p>
         <input type="text" id="clrInput" value="type any color" /> <button id="clrInputBtn">Go</button>
     </div>
+    <h1 align="center"> JQuery-UI </h1>
+    <h2 id="draggable">Draggable and Resizable Interaction</h2>
+    <div>
+        <p>You can drag and drop this picture wherever you want!</p>
+        <img src="img/draggablePic.JPG" id="draggablePic" />
+        <p>This picture is resizable!</p>
+        <img src="img/draggablePic.JPG" id="resizablePic" />
+    </div>
+    <h1 align="center" id="apps"> Applications developed using JQuery-UI </h1>
+    <h2 id="matchingGame">Simple Matching Game</h2>
+    <!--flags section-->
+    <div id="flagsImgs"></div>
+    <!--names section-->
+    <div id="flagsNames"></div>
 </body>
 
 </html>

@@ -56,5 +56,48 @@ $(document).ready(function() {
         var color = $("#clrInput").val();
         $("#clrPara").css("color", color);
     });
+    //draggable interaction
+    $("#draggablePic").draggable();
+    $("#resizablePic").resizable();
+    //Simple Matching Game
+    //we need two arrays, one for flags imgs and one for names
+    var flagsImgs = ["img/flags/argentina.png",
+        "img/flags/brazil.png",
+        "img/flags/lebanon.png",
+        "img/flags/syria.png",
+        "img/flags/canada.png"
+    ];
+    var flagsNames = ["Syria", "Lebanon", "Argentina", "Brazil", "Canada"];
+    //we need to shuffle the arrays
+    shuffle(flagsImgs);
+    shuffle(flagsNames);
+    $.each(flagsImgs, function(index, value) {
+        var flag = value.slice(10, -4);
+        $("<div> <img src=" + value + " /> </div>")
+            .appendTo("#flagsImgs").draggable({
+                revert: function(is_valid_drop) {
+                    if (is_valid_drop) {
+                        $(this).append("<img src= img/yes.png / > ");
+                        $(this).draggable('disable');
+                        return true;
+                    } else {
+                        $(this).append("<img src= img/no.png / > ");
+                        $(this).draggable('disable');
+                        return true;
+                    }
+                },
+                scope: flag
 
+            });
+    });
+    $.each(flagsNames, function(index, value) {
+        $("<div>" + value + " </div>")
+            .appendTo("#flagsNames").droppable({
+                scope: value.toLowerCase()
+            });
+    });
 });
+//we need a shuffle function to randomize the flags everytime we play the game
+function shuffle(arr) {
+    return arr.sort(function() { return .2 - Math.random(); });
+}
