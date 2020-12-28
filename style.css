@@ -59,3 +59,50 @@ a {
     width: 100px;
     height: 100px;
 }
+
+#matchingGameContainer {
+    width: 85%;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 2px;
+    padding: 2px;
+}
+
+#pswContainer {
+    width: 300px;
+    height: 90px;
+    float: left;
+    border-radius: 10px;
+    padding: 2px;
+    margin-bottom: 5px;
+    border: rgb(125, 158, 248) solid 2px;
+}
+
+#progressBar {
+    border: 1px solid maroon;
+    width: 210px;
+    height: 15px;
+    margin: 5px;
+    float: left;
+    border-radius: 5px;
+    padding-bottom: 0em;
+}
+
+#pswDiv {
+    width: 200px;
+    height: 15px;
+    margin: 5px;
+    float: left;
+}
+
+#password {
+    margin: left;
+    width: 200px;
+}
+
+#result {
+    margin-top: 0px;
+    margin-left: 5px;
+    padding-top: 0px;
+}

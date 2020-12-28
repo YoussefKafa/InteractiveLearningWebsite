@@ -18,8 +18,9 @@
     <a href="#wwheaa">2. Dealing With HTML</a><br>
     <a href="#dwc">3. Dealing With Css</a><br>
     <a href="#draggable">4. JQuery-UI Interactions</a><br>
-    <a href="#apps">5. Applications developed using JQuery-UI</a><br>
+    <a href="#apps">5. Applications developed using JQuery and JQuery-UI </a><br>
     <a href="#matchingGame">&nbsp 5.1 Simple Matching game</a><br>
+    <a href="#psw">&nbsp 5.2 Password Strength Meter</a><br>
     <div id="eventsDiv">
         <h2 id="beae">Basic Events And Effects:</h2>
         <!--______________________________________Click Event_______________________________________________-->
@@ -71,7 +72,7 @@
         <button id="turnBlackBtn">Turn black</button>&nbsp;&nbsp;<button id="turnBlueBtn">Turn back!</button>
         <h2>Get, Set</h2>
         <p id="clrPara">You can change the color of this paragraph to the color that you want!</p>
-        <input type="text" id="clrInput" value="type any color" /> <button id="clrInputBtn">Go</button>
+        <input type="text" id="clrInput" placeholder="type any color" /> <button id="clrInputBtn">Go</button>
     </div>
     <h1 align="center"> JQuery-UI </h1>
     <h2 id="draggable">Draggable and Resizable Interaction</h2>
@@ -84,9 +85,21 @@
     <h1 align="center" id="apps"> Applications developed using JQuery-UI </h1>
     <h2 id="matchingGame">Simple Matching Game</h2>
     <!--flags section-->
-    <div id="flagsImgs"></div>
-    <!--names section-->
-    <div id="flagsNames"></div>
+    <div id="matchingGameContainer">
+        <div id="flagsImgs"></div>
+        <!--names section-->
+        <div id="flagsNames"></div>
+    </div>
+    <h2 id="psw">Password Strength Meter</h2>
+
+    <div id="pswContainer">
+        &nbspEnter Your Password:<br>
+        <div id="pswDiv"><input id="password" type="password" placeholder="Password here!" /></div><br>
+        <div id="progressBar"></div><br><br>
+        <span id="result"></span>
+    </div>
+    <br>
+    <br>
 </body>
 
 </html>

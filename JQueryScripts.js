@@ -96,8 +96,57 @@ $(document).ready(function() {
                 scope: value.toLowerCase()
             });
     });
+    //////////////////////////////
+    //Password Strength Meter
+    $("#password").keyup(function() {
+        strengthMeter($("#password").val());
+    });
 });
 //we need a shuffle function to randomize the flags everytime we play the game
 function shuffle(arr) {
     return arr.sort(function() { return .2 - Math.random(); });
+}
+//calculate the strength of a password
+function strengthMeter(password) {
+    var strength = 0;
+    if (password.length >= 5) {
+        strength++;
+
+        if (password.match(/([a-z])/) && password.match(/([A-Z])/)) {
+            strength++;
+        }
+        if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/)) {
+            strength++;
+        }
+        if (password.match(/([!, @, #, $, %, ^, &, *, _, ~, ?])/)) {
+            strength++;
+        }
+        if (password.match(/(.*[!, @, #, $, %, ^, &, *, _, ~, ?].*[!, @, #, $, %, ^, &, *, _, ~, ?])/)) {
+            strength++;
+        }
+
+    }
+
+    if (strength == 0) {
+        $("#progressBar").progressbar({ value: 20 });
+        $(".ui-progressbar-value").css("background", "red");
+        $("#result").html("Too short").css("color", "red");
+    } else if (strength < 3) {
+        $("#progressBar").progressbar({ value: 40 });
+        $(".ui-progressbar-value").css("background", "orange");
+        $("#result").html("Weak").css("color", "orange");
+    } else if (strength == 3) {
+        $("#progressBar").progressbar({ value: 70 });
+        $(".ui-progressbar-value").css("background", "blue");
+        $("#result").html("Good").css("color", "blue");
+    } else {
+        $("#progressBar").progressbar({ value: 100 });
+        $(".ui-progressbar-value").css("background", "green");
+        $("#result").html("Strong").css("color", "green");
+    }
+    if (password.length == 0) {
+        $("#progressBar").progressbar({ value: 0 });
+        $(".ui-progressbar-value").css("background", "white");
+        $("#result").html("");
+    }
 }
